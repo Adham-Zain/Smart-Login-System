@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="loginSection w-100 vh-100  d-flex justify-content-center align-items-center">
+        <div class="loginContent container shadow py-5 px-lg-5 rounded-2">
+            <h2 class="text-white text-center">Login To Continue</h2>
+
+            <div class="my-4">
+                <input list="emailsDl" type="email" class="form-control fs-5" id="loginEmail" placeholder="Email :">
+            </div>
+
+            
+            <datalist id="emailsDl">
+
+            </datalist>
+
+            <div class="my-3">
+                <input type="password" class="form-control fs-5" id="loginPassword" placeholder="Password :">
+            </div>
+
+            <button id="loginBtn" class="btn btn-outline-light py-2 px-4 fs-5 mx-auto d-block">Login</button>
+
+            <span class="text-light text-center d-block mt-4">Don’t have an account? <a href="#"
+                    class="text-light fw-bold">Sign Up</a></span>
+        </div>
+    </section>
+
+    <section class="signInSection w-100 vh-100 d-none justify-content-center align-items-center">
+        <div class="signInContent container shadow py-5 px-lg-5 rounded-2">
+            <h2 class="text-white text-center">Sign in Now</h2>
+
+            <div class="my-4 position-relative">
+                <input type="text" class="form-control fs-5 " id="signInName" placeholder="User Name :">
+                <i class="fa-solid fa-check position-absolute text-success fs-4 d-none"></i>
+            </div>
+
+            <div class="alert alert-danger d-none" role="alert">
+                Your username is invalid. Please ensure it contains only letters, numbers, and underscores.
+              </div>
+
+              
+            <div class="my-4 position-relative">
+                <input type="email" class="form-control fs-5" id="signInEmail" placeholder="Email :">
+                <i class="fa-solid fa-check position-absolute text-success fs-4 d-none"></i>
+            </div>
+            <div class="alert alert-danger d-none" role="alert">
+                Please provide a valid email address in the format: user@example.com.
+              </div>
+               
+            <datalist id="emailsDl">
+
+            </datalist>
+
+
+
+            <div class="my-3 position-relative">
+                <input type="password" class="form-control fs-5" id="signInPassword" placeholder="Password :">
+                <i class="fa-solid fa-check position-absolute text-success fs-4 d-none"></i>
+
+            </div>
+            <div class="alert alert-danger d-none" role="alert">
+                Password must be at least 6 characters long, contain at least one uppercase letter, one lowercase letter, and one number
+              </div>
+
+            <button id="signInBtn" class="btn btn-outline-light py-2 px-4 fs-5 mx-auto d-block">Sign In</button>
+
+            <span class="text-light text-center d-block mt-4">You have an account? <a class="text-light fw-bold">Login</a></span>
+        </div>
+    </section>
+
+    <section class="myAlert w-100 vh-100 d-none justify-content-center align-items-center position-absolute top-0">
+        <div class="myAlertContent container shadow py-5 px-lg-5 rounded-2 position-relative">
+            <i class="fa-solid fa-x text-light fs-2 position-absolute"></i>
+            <h2 class="text-danger text-center">"Invalid username or password. Please try again."</h2>
+        </div>
+    </section>
+
+
+    <section class="main d-none w-100 vh-100 position-absolute top-0 justify-content-center align-items-center">
+        <button id="logout" class="btn btn-outline-danger position-absolute">Log Out</button>
+        <h1 class="text-light bg-opacity-50 bg-black p-1 p-lg-3"></h1>
+    </section>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

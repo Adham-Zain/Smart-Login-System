@@ -1,0 +1,61 @@
+.loginSection,
+.myAlert,
+.signInSection {
+    background-color: rgba(33, 37, 41, 0.8);
+}
+
+.loginContent,
+.myAlertContent,
+.signInContent,.main {
+    background-color: rgba(33, 37, 41, 1);
+}
+
+.loginContent,
+.signInContent {
+    background-color: rgba(33, 37, 41, 1);
+    width: 90%;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.myAlertContent i {
+    top: -100%;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.signInSection {
+    a {
+        cursor: pointer;
+    }
+
+    .fa-check{
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.main{
+    background-image: url("https://i.makeagif.com/media/10-02-2015/AmPbA5.gif");
+    background-size:  contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main .btn{
+    left: 1rem;
+    top: 1rem;
+}
+
+@media (min-width:780px) {
+
+    .loginContent,
+    .signInContent {
+        width: 60%;
+    }
+}
